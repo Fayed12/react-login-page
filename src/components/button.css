@@ -1,0 +1,24 @@
+.button-from{
+    padding-block:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-from button{
+    outline: none;
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(147, 189, 189);
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button-from button:hover{
+    background-color: teal;
+    color: white;
+}

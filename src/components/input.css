@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-inline: 5px;
+}
+input + label{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    transform: translateY(-50%);
+    transition: .5s;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+input:focus + label , 
+input:active + label , 
+input:not(:placeholder-shown) + label{
+    top: -15px;
+    transform: translateY(0%);
+    background-color: teal;
+    color: white;
+}

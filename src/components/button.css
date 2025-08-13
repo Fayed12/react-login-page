@@ -4,11 +4,11 @@
     justify-content: center;
     align-items: center;
 }
-.button-from button{
+.button-from .my-button{
     outline: none;
     border: 1px solid white;
     background-color: white;
-    color: rgb(147, 189, 189);
+    color: teal;
     width: 120px;
     padding: 5px 10px;
     border-radius: 5px;
@@ -16,9 +16,10 @@
     font-size: 20px;
     cursor: pointer;
     transition: .4s;
-}
-
-.button-from button:hover{
-    background-color: teal;
-    color: white;
+} 
+.my-button.disabled {
+    background-color: white;
+    color: rgb(162, 226, 226);
+    cursor: not-allowed;
+    transform: none;
 }
